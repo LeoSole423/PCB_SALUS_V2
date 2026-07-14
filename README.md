@@ -19,6 +19,8 @@ los requisitos y la arquitectura.
 - [Contexto del proyecto](docs/00_CONTEXTO_PROYECTO.md): objetivo, requisitos
   conocidos, decisiones pendientes y lecciones de la V1.
 - [Estructura del esquematico y librerias](docs/01_ESTRUCTURA_ESQUEMATICO_Y_LIBRERIAS.md): como separar la V2 en hojas y gestionar componentes locales.
+- [Validacion y pruebas](docs/02_VALIDACION_Y_PRUEBAS.md): resultados de
+  simulacion, pruebas pendientes y plan de validacion fisica.
 
 ## Estado actual
 

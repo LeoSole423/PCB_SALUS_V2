@@ -416,7 +416,7 @@
         "uuid": "73bd63ea-8f0f-4b31-8d24-3cde4b540ad9"
       }
     ],
-    "used_designators": "U1-4,F1-2,Q1-4,J1-3,#PWR1-31,#PWR46-49,#PWR54,#PWR56-57,#PWR61,D1-4,C1-11,R1-10,R22-23,SW1-2",
+    "used_designators": "SW1-2,R1-14,R22-23,C1-14,D1-4,FB1,#PWR1-42,#PWR46-49,#PWR54,#PWR56-57,#PWR61,J1-5,Q1-4,F1-2,U1-4",
     "variants": []
   },
   "sheets": [
@@ -431,6 +431,10 @@
     [
       "195b6a32-4ce2-4ad3-b1b2-c1501c147c70",
       "ESP32"
+    ],
+    [
+      "20e3551c-55ad-441c-9e51-79e4c75cc265",
+      "SENSORES"
     ]
   ],
   "text_variables": {},
