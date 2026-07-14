@@ -38,6 +38,7 @@ Estados usados:
 | Aislamiento entre USB y 5V_IN | Simulado | Con 5V_IN a 5 V, USB_VBUS a 0 V y carga de 100 mA, la corriente hacia USB fue aproximadamente 2 uA de fuga generica, no una retroalimentacion de potencia. | Falta medicion con los diodos reales. |
 | Tabla DC de auto-programacion | Simulado | DTR/RTS altos o bajos a la vez: EN y BOOT altos. DTR alto/RTS bajo: EN = 31 mV y BOOT alto. DTR bajo/RTS alto: EN alto y BOOT = 31 mV. | No valida aun la secuencia temporal completa de esptool ni el CP2102N real. |
 | Margen del TLV75733 tras el OR | Revisado | El peor caso simulado de 4.628 V deja 0.903 V por encima de 3.3 V. El dropout maximo publicado a 1 A es 0.425 V, por lo que el LDO sigue en regulacion en esta condicion simulada. | Requiere medir la tension real del step-down o USB, la caida real del SS14 y el consumo maximo. |
+| Interfaz J6 a BTS7960 | Revisado | GND, +5 V, EN comun y dos PWM estan trazados en el esquema. `R_IS` y `L_IS` quedaron pendientes y no se deben conectar directamente al ADC. | Falta verificar pinout y red IS del modulo real, con medicion en banco. |
 
 ## Pendientes de simulacion
 
