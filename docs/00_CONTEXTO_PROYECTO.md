@@ -28,8 +28,9 @@ Jetson Orin Nano <--> enlace definido <--> ESP32 <--> sensores y actuadores
 3. Incorporar un conector para un futuro modulo GPS RTK de doble antena.
 4. Usar la V1 como referencia para entender interfaces, no como esquema para
    copiar directamente.
-5. Alimentar la placa desde dos modulos step-down externos: uno de 5 V para el
-   sistema y uno de 7 V para los servos.
+5. Alimentar la logica desde un modulo step-down externo de 5 V. El riel de
+   servos de 7 V seguira siendo externo a esta revision hasta definir sus
+   conectores y su distribucion.
 
 ## Controlador principal seleccionado
 
@@ -106,9 +107,9 @@ Datos de partida conocidos:
 ```text
 Bateria de 60 V
   |-- step-down a 19 V --> Jetson Orin Nano
-  |                         `-- step-down a 5 V --> entrada 5 V de V2 --> proteccion 5 V --> +5V_SYS
-  |                                                                                             |-- modulos de 5 V
-  |                                                                                             `-- regulador 3.3 V --> ESP32 y logica
+  |                         `-- step-down a 5 V --> 5V_IN / USB_VBUS --> OR D3/D4 --> 5V_SYS
+  |                                                                                     |-- modulos de 5 V
+  |                                                                                     `-- regulador 3.3 V --> ESP32 y logica
   |
   `-- step-down a 24 V --> step-down a 7 V --> entrada 7 V --> +7V_SERVO
                                                                   `-- conectores de servos
@@ -122,9 +123,8 @@ diodos zener y valores de resistencia de la V1.
 En particular, la V1 usa MOSFET `IRFR5305TRPBF`, con una clasificacion maxima
 de `VDS = -55 V`. Ese valor no es apto para usar como barrera frente a una
 bateria de 60 V nominales, porque no deja margen para la tension de carga
-completa ni para transitorios. La V2 conservara la funcion de corte por
-sobrevoltaje, pero usara una topologia y componentes clasificados para el peor
-caso real.
+completa ni para transitorios. La V2 podria recuperar una funcion de corte por
+sobrevoltaje en el futuro, pero no existe ese bloque en el esquema activo.
 
 ### Alcance de cada riel
 
@@ -137,35 +137,22 @@ caso real.
 - La potencia de traccion y los drivers de motor permanecen fuera de estos
   rieles, salvo que se defina expresamente un bloque dedicado en el futuro.
 
-### Proteccion prevista en la entrada de 5 V
+### Estado actual de la entrada de 5 V
 
-La entrada de 5 V tendra un bloque de proteccion antes de conectarse a
-`+5V_SYS`. En esta iteracion del esquema se contempla:
+La hoja de alimentacion heredada fue retirada. En el esquema actual `J5` es una
+reserva sin huella, MPN ni LCSC PN; no se montara ni se incluira al enviar la
+BOM a JLCPCB. Todavia se debe decidir si la entrada final sera un conector de
+cable, un borne, un JST u otra interfaz.
 
-1. Conector generico de dos pines, con polaridad identificada. Su MPN, huella
-   y conector complementario se definiran con el cableado final.
-2. Proteccion contra polaridad inversa, preferentemente con MOSFET de baja
-   perdida o un controlador de diodo ideal.
-3. Corte por sobretension inspirado en la topologia de V1.
+El esquema mantiene el OR de alimentacion `D3/D4`: permite alimentar la logica
+desde `5V_IN` o desde `USB_VBUS` sin retroalimentar la otra fuente. No es una
+proteccion frente a sobretension, polaridad inversa ni cortocircuito.
 
-No se agregara fusible o PTC en esta etapa, por decision de diseno. Esto deja
-sin resolver la proteccion ante un cortocircuito interno: se dimensionara y
-seleccionara al cerrar el presupuesto de corriente de la PCB, GPS RTK, IMU y
-demas modulos. Tambien quedan pendientes el TVS, los capacitores de entrada y
-los puntos de prueba del riel.
-
-Ademas de la polaridad inversa, este bloque debera desconectar la electronica
-si la salida del step-down de 5 V falla y aparece una tension superior a la
-permitida. En el robot ya ocurrio un fallo de este tipo, donde llegaron 24 V a
-la entrada prevista para 5 V y se dano la electronica. La proteccion de la V1
-con dos MOSFET P-channel, zener y resistencias se toma como referencia de esta
-funcion de corte por sobretension.
-
-No alcanza con un MOSFET de polaridad inversa, un zener de compuerta o un TVS:
-por si solos no constituyen un corte de sobretension regulado. La V2 debera
-usar una topologia equivalente a la V1 o un controlador dedicado de sobretension,
-con componentes clasificados para la mayor tension de fallo que pueda llegar a
-la entrada de la PCB.
+Por una decision de esta iteracion, la V2 no incorpora aun fusible, TVS de
+entrada ni corte de sobretension. Si el step-down fallara y entregara 24 V, la
+placa no queda protegida por este esquema. Esa proteccion debe residir en un
+step-down robusto o volver a agregarse como un bloque dedicado antes de conectar
+la placa al robot.
 
 ### Limite de responsabilidad para el riel de 19 V
 
@@ -174,30 +161,10 @@ controlador de ESP32, sensores y senales; recibira solamente sus rieles de 5 V
 y 7 V ya regulados. La proteccion de 19 V para la Jetson, si se implementa,
 pertenecera a un modulo o placa de distribucion de potencia independiente.
 
-La proteccion de 5 V sigue siendo necesaria: protege la V2 si el step-down de
-5 V falla y deja pasar su tension de entrada hacia la placa.
-
-El bloque de 5 V se dimensionara para soportar 24 V continuos en su entrada de
-falla. Sus semiconductores, capacitores y resistencias criticas tendran una
-clasificacion de al menos 40 V para conservar margen de diseno.
-
-Para los dos MOSFET P-channel del corte por sobretension de 5 V se selecciona
-el mismo MPN usado en la V1: `IRFR5305TRPBF` de Infineon, JLCPCB/LCSC `C2624`.
-Es un DPAK (TO-252AA) de 55 V, adecuado para la falla maxima definida de 24 V.
-Es Extended, pero ambos MOSFET usan el mismo modelo y por tanto comparten un
-solo cargo de feeder en Economic PCBA. Se verificara simbolo, pinout y huella
-contra el datasheet antes de pasarlo a PCB.
-
-La entrada de 7 V se conectara directamente a `+7V_SERVO`, sin fusible, TVS ni
-proteccion contra polaridad inversa en la PCB, por decision de diseno. Se
-mantendran capacitores de reserva cerca de los conectores de servo. El conector,
-cobre y vias de este riel se dimensionaran para los picos de al menos 5 A.
-
-La entrada no protegida se denominara `VIN_5V` y se usara exclusivamente dentro
-de la hoja de alimentacion cuando se actualice el conector desde KiCad.
-`+5V_SYS` sera el unico riel de 5 V disponible en las demas hojas del proyecto.
-El conector, los componentes de proteccion de 5 V y la corriente nominal se
-seleccionaran cuando se conozcan los consumos de modulos y el cableado definitivo.
+La seleccion del conector de entrada, la proteccion ante 24 V y el presupuesto
+de corriente siguen pendientes. `5V_IN` identifica la fuente externa y
+`5V_SYS` es el riel comun despues del OR; ningun otro bloque debe asumir que
+`5V_IN` es un riel protegido.
 
 ### Datos pendientes de potencia
 

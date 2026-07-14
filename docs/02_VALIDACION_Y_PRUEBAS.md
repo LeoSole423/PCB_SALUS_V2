@@ -45,7 +45,7 @@ Estados usados:
 |---|---|---|---|
 | Alta | OR de alimentacion D3/D4 | Medir en banco la caida de tension y fuga inversa con el SS14 real, especialmente con carga alta. | Placa fisica y fuente limitada en corriente. |
 | Alta | Auto-programacion Q3/Q4 | Simular la secuencia transitoria usada por esptool y probar la carga real de firmware por USB. | Definir niveles y tiempos del CP2102N; luego placa fisica. |
-| Alta | Proteccion de entrada de 5 V | Barrer VIN_5V entre 0 V y 24 V, con carga, para comprobar el corte por sobretension. | Modelos de IRFR5305TRPBF y BZT52C3V3, y umbral de corte definido. |
+| Alta | Proteccion de entrada de 5 V | Decidir si la proteccion frente a una falla de 24 V se implementa en el step-down o vuelve como bloque dedicado en la PCB. | Requisito de seguridad y topologia definida. |
 | Media | TLV75733 | Revisar arranque y respuesta a escalones de carga. | Modelo SPICE oficial del TLV75733 o modelo equivalente validado. |
 | Media | ESD USB-C | Revisar la estrategia de proteccion de VBUS, D+ y D-. | Modelo de SP0503BAHTG; la validacion definitiva requiere prueba ESD fisica. |
 

@@ -1,0 +1,21 @@
+Reference,Qty,Value,Footprint,MPN,Manufacturer,LCSC,LC_Stock,Chosen_Distributor,Datasheet,Validated,DNP,Notes
+"C6,C11,C2,C9,C4,C12,C13",7,100nF,0603,CL10B104KA8NNNC,Samsung Electro-Mechanics,C1590,,,,,,
+"C8,C5,C3,C1",4,10uF,0805,CL21A106KPFNNNE,Samsung Electro-Mechanics,C17024,,,,,,
+"C10,C7,C14",3,4.7uF,0805,CC0805KKX5R6BB475,YAGEO,C107125,,,,,,
+D2,1,SP0503BAHTG,SOT-143,SP0503BAHTG,Littelfuse,C3040626,,,http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf,,,
+"D3,D4",2,SS14,SMA,SS14,Yangzhou Yangjie Electronic Technology,C2480,,,https://www.vishay.com/docs/88746/ss12.pdf,,,
+FB1,1,600R@100MHz,0603,GZ1608D601TF,Sunlord,C1002,,,,,,
+J1,1,Conn_01x06,JST_XH_S6B-XH-SM4-TB_1x06-1MP_P2.50mm_Horizontal,S6B-XH-SM4-TB(LF)(SN),JST,C20493992,,,,,,Conector SMD de programacion; requiere housing XHP-6 y terminales SXH-001T-P0.6.
+J3,1,USB_C_Receptacle_USB2.0_16P,USB_C_Receptacle_G-Switch_GT-USB-7010ASV,GT-USB-7010ASV,G-Switch,C2988369,,,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,,,
+J4,1,Conn_01x03,JST_XH_S3B-XH-SM4-TB_1x03-1MP_P2.50mm_Horizontal,S3B-XH-SM4-TB(LF)(SN),JST,C5306495,,,,,,Conector SMD de 3 pines; requiere housing XHP-3 y terminales SXH-001T-P0.6.
+"Q4,Q3",2,SS8050,SOT-23,SS8050,Changjiang Electronics Technology (CJ),C2150,,,http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf,,,
+"R4,R5",2,5.1k,0603,0603WAF5101T5E,UNI-ROYAL(Uniroyal Elec),C23186,,,,,,
+R6,1,22.1k,0603,0603WAF2212T5E,UNI-ROYAL(Uniroyal Elec),C25961,,,,,,
+R7,1,47.5k,0603,0603WAF4752T5E,UNI-ROYAL(Uniroyal Elec),C23061,,,,,,
+"R10,R11,R12",3,1k,0603,0603WAF1001T5E,UNI-ROYAL(Uniroyal Elec),C21190,,,,,,
+"R23,R22,R9,R8,R13,R14",6,10k,0603,0603WAF1002T5E,UNI-ROYAL(Uniroyal Elec),C25804,,,,,,
+"SW1,SW2",2,,Boton_Simple,TS1201-TZ25HAM,BXCONN(宝讯),C36936655,,,https://atta.szlcsc.com/upload/public/pdf/source/20240731/528267057C6169D47FE6AADDB119A0E9.pdf,,,
+U1,1,TLV75733PDBV,SOT-23-5,TLV75733PDBVR,Texas Instruments,C485517,,,https://www.ti.com/lit/ds/symlink/tlv757p.pdf,,,
+U2,1,ESP32-WROOM-32E,ESP32-WROOM-32E,ESP32-WROOM-32E-N8,Espressif Systems,C701342,,,https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf,,,
+U3,1,CP2102N-A02-GQFN24,QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm,CP2102N-A02-GQFN24R,Silicon Labs,C969151,,,https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf,,,
+U4,1,BMI088,Bosch_LGA-16_4.5x3mm_P0.5mm_LayoutBorder7x1y_ClockwisePinNumbering,BMI088,Bosch Sensortec,C194919,,,https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi088-ds001.pdf,,,
