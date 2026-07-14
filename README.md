@@ -17,6 +17,8 @@ placement, ruteo y DRC.
 
 ## Documentacion
 
+- [Mapa de submodulos y pinout](docs/05_MAPA_DE_SUBMODULOS_Y_PINOUT.md):
+  conexiones entre la ESP32, sensores, actuadores y conectores.
 - [Puente H BTS7960](docs/04_PUENTE_H_BTS7960.md)
 
 - [Contexto del proyecto](docs/00_CONTEXTO_PROYECTO.md): objetivo, requisitos

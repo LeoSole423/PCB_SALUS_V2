@@ -3582,6 +3582,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 104.14 87.63)
@@ -3884,6 +3999,12 @@
 		(uuid "c122267e-44f7-43f8-bc09-52f31c0eb44a")
 	)
 	(junction
+		(at 46.99 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d220538c-e67d-4200-b549-3c43c4d2e806")
+	)
+	(junction
 		(at 60.96 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3906,6 +4027,10 @@
 		(uuid "0eb84295-ed9c-48f0-a397-e864eb739619")
 	)
 	(no_connect
+		(at 128.27 180.34)
+		(uuid "12374603-2c59-4b92-81de-876de820a995")
+	)
+	(no_connect
 		(at 83.82 68.58)
 		(uuid "382c01d1-a537-4e15-b879-6a1de0ff9bf9")
 	)
@@ -3916,6 +4041,10 @@
 	(no_connect
 		(at 83.82 58.42)
 		(uuid "5673682d-fdc4-49b3-8510-f158d5703bc1")
+	)
+	(no_connect
+		(at 78.74 175.26)
+		(uuid "62a9fcf5-9c3b-4d30-aa49-893b34e65add")
 	)
 	(no_connect
 		(at 143.51 72.39)
@@ -5535,7 +5664,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 26.67 108.458 90)
 			(hide yes)
 			(show_name no)
@@ -6504,7 +6633,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 123.19 158.75 0)
 			(hide yes)
 			(show_name no)
@@ -6597,7 +6726,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 127.762 116.84 90)
 			(hide yes)
 			(show_name no)
@@ -6679,7 +6808,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 252.73 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -6845,7 +6974,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 203.2 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -7410,7 +7539,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 82.55 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -7490,7 +7619,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 90.17 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -7515,6 +7644,50 @@
 		)
 		(property "Description" "High Voltage, High Current Darlington Transistor Arrays, SOIC16/SOIC16W/DIP16/TSSOP16"
 			(at 88.9 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" "C157485"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "ULN2003BDR"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "ULN2003BDR"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7693,7 +7866,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm"
 			(at 60.96 170.18 0)
 			(hide yes)
 			(show_name no)
@@ -7717,6 +7890,50 @@
 		)
 		(property "Description" "8-bit serial in/out Shift Register 3-State Outputs"
 			(at 60.96 170.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" "C10092"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "SN74HC595DR"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "SN74HC595DR"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7815,7 +8032,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 43.18 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -7839,6 +8056,50 @@
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
 			(at 43.18 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC PN" "C5423"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "LM358DR"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "LM358DR"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8119,7 +8380,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 120.142 63.5 90)
 			(hide yes)
 			(show_name no)
@@ -8327,7 +8588,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 133.35 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -8418,7 +8679,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 121.92 111.252 90)
 			(hide yes)
 			(show_name no)
@@ -8500,7 +8761,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 183.642 34.29 90)
 			(hide yes)
 			(show_name no)
@@ -8658,7 +8919,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 38.862 179.07 90)
 			(hide yes)
 			(show_name no)
@@ -8819,7 +9080,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 20.0152 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -8946,6 +9207,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 46.99 45.72 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "75f205be-9211-446e-aa7d-0e163c61585d")
+		(property "Reference" "#FLG06"
+			(at 46.99 47.625 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 46.99 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 46.99 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 46.99 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 46.99 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fd7609e7-c7b6-44b7-8964-a00eda968fe5")
+		)
+		(instances
+			(project "PCB_SALUS_v2"
+				(path "/73bd63ea-8f0f-4b31-8d24-3cde4b540ad9/20e3551c-55ad-441c-9e51-79e4c75cc265"
+					(reference "#FLG06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 63.5 113.03 0)
 		(unit 1)
@@ -8978,7 +9317,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 61.722 113.03 90)
 			(hide yes)
 			(show_name no)
@@ -9060,7 +9399,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 186.3852 76.2 0)
 			(hide yes)
 			(show_name no)
@@ -9221,7 +9560,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
 			(at 203.2 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -9458,7 +9797,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical"
 			(at 148.59 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -10025,7 +10364,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 269.24 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -10427,7 +10766,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 53.34 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -10526,7 +10865,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 241.3 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -10816,7 +11155,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 61.9252 134.62 0)
 			(hide yes)
 			(show_name no)
@@ -11177,7 +11516,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 34.29 165.862 90)
 			(hide yes)
 			(show_name no)
@@ -11259,7 +11598,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 31.4452 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -11731,7 +12070,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 134.62 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -11973,7 +12312,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 183.642 64.77 90)
 			(hide yes)
 			(show_name no)
@@ -12055,7 +12394,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
 			(at 148.59 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -12221,7 +12560,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 186.3852 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -12301,7 +12640,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 86.36 124.46 0)
 			(hide yes)
 			(show_name no)
@@ -12335,28 +12674,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "c5f5b86c-b8d9-4aac-983d-a3a51db85276")
+			(uuid "c5f5b86c-b8d9-4aac-983d-a3a51db85277")
 		)
 		(pin "2"
-			(uuid "16646041-4145-4ff7-87ef-14d5ad4d12f5")
+			(uuid "16646041-4145-4ff7-87ef-14d5ad4d12f6")
 		)
 		(pin "5"
-			(uuid "a372b5e4-c044-4c61-8a1f-72da9342c98b")
+			(uuid "a372b5e4-c044-4c61-8a1f-72da9342c98c")
 		)
 		(pin "7"
-			(uuid "17f148d5-3fc7-4358-be8c-56165e1f637f")
+			(uuid "17f148d5-3fc7-4358-be8c-56165e1f6380")
 		)
 		(pin "8"
-			(uuid "4f44a71c-e35b-43fe-a2af-6801b95ea1bc")
+			(uuid "4f44a71c-e35b-43fe-a2af-6801b95ea1bd")
 		)
 		(pin "6"
-			(uuid "dc023d34-431b-4466-843c-2cfb2510bfa4")
+			(uuid "dc023d34-431b-4466-843c-2cfb2510bfa5")
 		)
 		(pin "4"
-			(uuid "c8f69602-eb20-4759-a77b-a7ef7e948f7f")
+			(uuid "c8f69602-eb20-4759-a77b-a7ef7e948f80")
 		)
 		(pin "3"
-			(uuid "02b709b0-b832-44d7-8126-33a4da5a946e")
+			(uuid "02b709b0-b832-44d7-8126-33a4da5a946f")
 		)
 		(instances
 			(project "PCB_SALUS_v2"
@@ -12477,7 +12816,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 57.15 110.998 90)
 			(hide yes)
 			(show_name no)

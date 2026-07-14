@@ -5,9 +5,9 @@ Reference,Qty,Value,Footprint,MPN,Manufacturer,LCSC,LC_Stock,Chosen_Distributor,
 D2,1,SP0503BAHTG,SOT-143,SP0503BAHTG,Littelfuse,C3040626,,,http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf,,,
 "D3,D4",2,SS14,SMA,SS14,Yangzhou Yangjie Electronic Technology,C2480,,,https://www.vishay.com/docs/88746/ss12.pdf,,,
 FB1,1,600R@100MHz,0603,GZ1608D601TF,Sunlord,C1002,,,,,,
-J1,1,Conn_01x06,JST_XH_S6B-XH-SM4-TB_1x06-1MP_P2.50mm_Horizontal,S6B-XH-SM4-TB(LF)(SN),JST,C20493992,,,,,,Conector SMD de programacion; requiere housing XHP-6 y terminales SXH-001T-P0.6.
+J1,1,Header_THT_1x06_P2.54mm,PinHeader_1x06_P2.54mm_Vertical,,Compra manual,,,,,,,Montaje manual THT; excluir de BOM y CPL JLCPCB.
 J3,1,USB_C_Receptacle_USB2.0_16P,USB_C_Receptacle_G-Switch_GT-USB-7010ASV,GT-USB-7010ASV,G-Switch,C2988369,,,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,,,
-J4,1,Conn_01x03,JST_XH_S3B-XH-SM4-TB_1x03-1MP_P2.50mm_Horizontal,S3B-XH-SM4-TB(LF)(SN),JST,C5306495,,,,,,Conector SMD de 3 pines; requiere housing XHP-3 y terminales SXH-001T-P0.6.
+J4,1,Header_THT_1x03_P2.54mm,PinHeader_1x03_P2.54mm_Vertical,,Compra manual,,,,,,,Montaje manual THT; excluir de BOM y CPL JLCPCB.
 "Q4,Q3",2,SS8050,SOT-23,SS8050,Changjiang Electronics Technology (CJ),C2150,,,http://www.secosgmbh.com/datasheet/products/SSMPTransistor/SOT-23/SS8050.pdf,,,
 "R4,R5",2,5.1k,0603,0603WAF5101T5E,UNI-ROYAL(Uniroyal Elec),C23186,,,,,,
 R6,1,22.1k,0603,0603WAF2212T5E,UNI-ROYAL(Uniroyal Elec),C25961,,,,,,
@@ -19,3 +19,20 @@ U1,1,TLV75733PDBV,SOT-23-5,TLV75733PDBVR,Texas Instruments,C485517,,,https://www
 U2,1,ESP32-WROOM-32E,ESP32-WROOM-32E,ESP32-WROOM-32E-N8,Espressif Systems,C701342,,,https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf,,,
 U3,1,CP2102N-A02-GQFN24,QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm,CP2102N-A02-GQFN24R,Silicon Labs,C969151,,,https://www.silabs.com/documents/public/data-sheets/cp2102n-datasheet.pdf,,,
 U4,1,BMI088,Bosch_LGA-16_4.5x3mm_P0.5mm_LayoutBorder7x1y_ClockwisePinNumbering,BMI088,Bosch Sensortec,C194919,,,https://www.bosch-sensortec.com/media/boschsensortec/downloads/datasheets/bst-bmi088-ds001.pdf,,,
+"C17,C18,C19,C20,C21",5,100nF,C_0603_1608Metric,CL10B104KA8NNNC,Samsung Electro-Mechanics,C1590,,,,,,Huella asignada; consolidar propiedades al cerrar BOM.
+R1,1,10k,R_0603_1608Metric,0603WAF1002T5E,UNI-ROYAL(Uniroyal Elec),C25804,,,,,,Huella asignada.
+"R15,R16,R20,R24",4,10k,R_0603_1608Metric,0603WAF1002T5E,UNI-ROYAL(Uniroyal Elec),C25804,,,,,,Huella asignada.
+R17,1,1k,R_0603_1608Metric,0603WAF1001T5E,UNI-ROYAL(Uniroyal Elec),C21190,,,,,,Huella asignada.
+"R2,R3",2,R,R_0603_1608Metric,,,,,,,,Valor y MPN pendientes.
+R18,1,330,R_0603_1608Metric,,,,,,,,MPN pendiente.
+R19,1,47k,R_0603_1608Metric,,,,,,,,MPN pendiente.
+R21,1,4.7k,R_0603_1608Metric,,,,,,,,MPN pendiente.
+U5,1,74HC595,SOIC-16_3.9x9.9mm_P1.27mm,SN74HC595DR,Texas Instruments,C10092,,,,,,Montaje SMD JLCPCB.
+U6,1,ULN2003A,SOIC-16_3.9x9.9mm_P1.27mm,ULN2003BDR,Texas Instruments,C157485,,,,,,Montaje SMD JLCPCB.
+U7,1,LM358,SOIC-8_3.9x4.9mm_P1.27mm,LM358DR,Texas Instruments,C5423,,,,,,Montaje SMD JLCPCB.
+J2,1,Conn_01x04,PinHeader_1x04_P2.54mm_Vertical,,Compra manual,,,,,,,Montaje manual THT; excluir de BOM y CPL JLCPCB.
+J6,1,Conn_02x04_Odd_Even,PinHeader_2x04_P2.54mm_Vertical,,Compra manual,,,,,,,Montaje manual THT; excluir de BOM y CPL JLCPCB.
+"J7,J8,J11",3,Conn_01x02,PinHeader_1x02_P2.54mm_Vertical,,Compra manual,,,,,,,Montaje manual THT; excluir de BOM y CPL JLCPCB.
+"J9,J10",2,Conn_01x06,PinHeader_1x06_P2.54mm_Vertical,,Compra manual,,,,,,,Montaje manual THT; excluir de BOM y CPL JLCPCB.
+"J12,J13,J14",3,Conn_01x04,PinHeader_1x04_P2.54mm_Vertical,,Compra manual,,,,,,,Montaje manual THT; excluir de BOM y CPL JLCPCB.
+J15,1,Conn_01x03,PinHeader_1x03_P2.54mm_Vertical,,Compra manual,,,,,,,Montaje manual THT; excluir de BOM y CPL JLCPCB.

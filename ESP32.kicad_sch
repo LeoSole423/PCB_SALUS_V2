@@ -5,202 +5,6 @@
 	(uuid "4863c840-8425-4a5f-bdb9-cbc8eccf2367")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Connector:Jack-DC"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 5.334 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jack-DC"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 1.27 -1.016 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 1.27 -1.016 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "DC Barrel Jack"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "DC power barrel jack connector"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "BarrelJack*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Jack-DC_0_1"
-				(rectangle
-					(start -5.08 3.81)
-					(end 5.08 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -2.54 -2.54) (xy -1.27 -1.27) (xy 0 -2.54) (xy 2.54 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.302 1.905)
-					(mid -3.9343 2.54)
-					(end -3.302 3.175)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.302 1.905)
-					(mid -3.9343 2.54)
-					(end -3.302 3.175)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 3.683 3.175)
-					(end -3.302 1.905)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jack-DC_1_1"
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
 				(offset 1.016)
@@ -904,6 +708,164 @@
 						)
 					)
 					(number "SH"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Connector_Generic:Conn_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4529,6 +4491,121 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 219.71 12.7)
@@ -4719,6 +4796,12 @@
 		(uuid "3bbe682c-bec6-4130-9b74-dad66903b88e")
 	)
 	(junction
+		(at 212.09 160.02)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "440d56ef-ddba-4d9b-b9bb-7c472ce10672")
+	)
+	(junction
 		(at 273.05 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4729,6 +4812,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "53b51667-5cb9-4083-bebf-b40724422d09")
+	)
+	(junction
+		(at 163.83 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5d74a373-530d-4583-9b94-a07fa29dbef4")
 	)
 	(junction
 		(at 260.35 148.59)
@@ -4747,6 +4836,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7c0aca73-ebaa-446a-b2b6-16105a0b7d94")
+	)
+	(junction
+		(at 234.95 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e0e7e81-baf1-45fd-90ff-b010f3731f53")
 	)
 	(junction
 		(at 113.03 39.37)
@@ -4773,6 +4868,12 @@
 		(uuid "9e28c360-c5f0-42fa-8462-d1411cc176c4")
 	)
 	(junction
+		(at 163.83 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a3b1a822-fca5-470d-8a76-9f4831678c20")
+	)
+	(junction
 		(at 66.04 31.75)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4783,12 +4884,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c0690dfe-d78d-4c96-9687-afda7d00072b")
-	)
-	(junction
-		(at 85.09 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c29f13e7-5a1b-4745-bd6d-13ef0f94456d")
 	)
 	(junction
 		(at 101.6 34.29)
@@ -4818,7 +4913,7 @@
 		(at 85.09 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "fc4476cc-1a2c-4fe3-95e3-326f30747158")
+		(uuid "ed5c04ed-3a41-4d50-8032-1e1dae4f8092")
 	)
 	(no_connect
 		(at 95.25 69.85)
@@ -4847,6 +4942,10 @@
 	(no_connect
 		(at 95.25 62.23)
 		(uuid "7308d2d4-05f2-4c9d-ad80-c1b7abfe5ad7")
+	)
+	(no_connect
+		(at 76.2 144.78)
+		(uuid "7dfa749d-fa8c-432a-8fec-7d8e3302a4cf")
 	)
 	(no_connect
 		(at 95.25 77.47)
@@ -5010,13 +5109,13 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 39.37) (xy 85.09 41.91)
+			(xy 163.83 93.98) (xy 166.37 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "236dca19-9be8-4436-ac7f-ccaf8451dee2")
+		(uuid "19e87a23-c5e2-483e-8242-79e52f7832c8")
 	)
 	(wire
 		(pts
@@ -5060,6 +5159,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 91.44) (xy 163.83 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38008639-f661-424f-849d-62dc34940097")
+	)
+	(wire
+		(pts
 			(xy 60.96 31.75) (xy 66.04 31.75)
 		)
 		(stroke
@@ -5067,16 +5176,6 @@
 			(type default)
 		)
 		(uuid "43fc3710-0534-4aed-b6a6-edbc7045d9ee")
-	)
-	(wire
-		(pts
-			(xy 85.09 43.18) (xy 85.09 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4984b46d-0a1f-416e-90ee-113dab63cb8d")
 	)
 	(wire
 		(pts
@@ -5117,16 +5216,6 @@
 			(type default)
 		)
 		(uuid "52d8b078-ccf8-4458-b07e-598ee2e81cda")
-	)
-	(wire
-		(pts
-			(xy 85.09 39.37) (xy 101.6 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "535602cc-13f1-4412-bc7d-f901e020f361")
 	)
 	(wire
 		(pts
@@ -5260,6 +5349,16 @@
 	)
 	(wire
 		(pts
+			(xy 85.09 39.37) (xy 85.09 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87830658-0948-43cd-b2d5-d2c88372c91b")
+	)
+	(wire
+		(pts
 			(xy 82.55 41.91) (xy 82.55 39.37)
 		)
 		(stroke
@@ -5287,6 +5386,16 @@
 			(type default)
 		)
 		(uuid "8be5ff68-be1d-4303-842c-be671ee78284")
+	)
+	(wire
+		(pts
+			(xy 162.56 93.98) (xy 163.83 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c527385-3ba4-494f-859a-3d23de72cadd")
 	)
 	(wire
 		(pts
@@ -5330,16 +5439,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 160.02) (xy 140.97 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96831f0b-9d15-47fe-b8bb-31b584ba1d0a")
-	)
-	(wire
-		(pts
 			(xy 26.67 59.69) (xy 69.85 59.69)
 		)
 		(stroke
@@ -5347,6 +5446,16 @@
 			(type default)
 		)
 		(uuid "9b1696b9-a679-40a7-a709-a17fc8a4fca7")
+	)
+	(wire
+		(pts
+			(xy 85.09 39.37) (xy 101.6 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a3592848-99a8-4f42-bde3-94ea88f0cd88")
 	)
 	(wire
 		(pts
@@ -5367,6 +5476,16 @@
 			(type default)
 		)
 		(uuid "acb08f90-dfde-4707-b3f8-527cf107ec2e")
+	)
+	(wire
+		(pts
+			(xy 163.83 91.44) (xy 166.37 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "addfefab-f5da-4398-a41f-2fed61f75f36")
 	)
 	(wire
 		(pts
@@ -6618,6 +6737,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 162.56 91.44 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e27d0a6-9d2b-4f6d-a99c-70670f665b80")
+		(property "Reference" "#FLG02"
+			(at 160.655 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 158.75 91.4399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 162.56 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6cf8cd62-d479-4762-b40a-bb2fc9e19e24")
+		)
+		(instances
+			(project "PCB_SALUS_v2"
+				(path "/73bd63ea-8f0f-4b31-8d24-3cde4b540ad9/195b6a32-4ce2-4ad3-b1b2-c1501c147c70"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:SS8050")
 		(at 119.38 86.36 0)
 		(unit 1)
@@ -7611,7 +7809,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 82.55 132.588 90)
 			(hide yes)
 			(show_name no)
@@ -7942,8 +8140,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 166.37 96.52 270)
+		(lib_id "power:PWR_FLAG")
+		(at 162.56 93.98 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7952,9 +8150,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3dcf6f96-2466-47ae-ae50-1dd4d9864929")
-		(property "Reference" "#PWR038"
-			(at 160.02 96.52 0)
+		(uuid "3c8976e9-3169-487e-bb73-70b3daf116b0")
+		(property "Reference" "#FLG01"
+			(at 160.655 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7964,19 +8162,19 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 162.56 96.5199 90)
+		(property "Value" "PWR_FLAG"
+			(at 158.75 93.9799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 96.52 0)
+			(at 162.56 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7987,7 +8185,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 96.52 0)
+			(at 162.56 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 162.56 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9300d127-a07d-4fb8-911b-6d8a0c9bfb95")
+		)
+		(instances
+			(project "PCB_SALUS_v2"
+				(path "/73bd63ea-8f0f-4b31-8d24-3cde4b540ad9/195b6a32-4ce2-4ad3-b1b2-c1501c147c70"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 163.83 93.98 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3dcf6f96-2466-47ae-ae50-1dd4d9864929")
+		(property "Reference" "#PWR038"
+			(at 163.83 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 164.592 97.282 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 163.83 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 163.83 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7998,7 +8274,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 166.37 96.52 0)
+			(at 163.83 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8571,6 +8847,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 212.09 160.02 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5153f1bb-005b-4a7c-868b-bc71df001af2")
+		(property "Reference" "#FLG04"
+			(at 210.185 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 208.28 160.0199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 212.09 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 212.09 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 212.09 160.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e397e697-5a7f-4c83-baa6-95ba667cd0cd")
+		)
+		(instances
+			(project "PCB_SALUS_v2"
+				(path "/73bd63ea-8f0f-4b31-8d24-3cde4b540ad9/195b6a32-4ce2-4ad3-b1b2-c1501c147c70"
+					(reference "#FLG04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 269.24 46.99 90)
 		(unit 1)
@@ -9078,7 +9433,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x06"
+		(property "Value" "Header_THT_1x06_P2.54mm"
 			(at 265.43 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9089,7 +9444,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S6B-XH-SM4-TB_1x06-1MP_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
 			(at 262.89 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -9122,7 +9477,7 @@
 				)
 			)
 		)
-		(property "LCSC PN" "C20493992"
+		(property "LCSC PN" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9133,7 +9488,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "Conector SMD de programacion; requiere housing XHP-6 y terminales SXH-001T-P0.6."
+		(property "BOM Comments" "Montaje manual: header THT vertical 1x06, paso 2.54 mm. Excluir de BOM y CPL de ensamblaje JLCPCB."
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9144,7 +9499,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "JST"
+		(property "Manufacturer" "Compra manual"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9155,7 +9510,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "S6B-XH-SM4-TB(LF)(SN)"
+		(property "Manufacturer Part" "Header generico THT 1x06, P2.54 mm, vertical"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -9166,7 +9521,7 @@
 				)
 			)
 		)
-		(property "MPN" "S6B-XH-SM4-TB(LF)(SN)"
+		(property "MPN" "Header generico THT 1x06 P2.54 mm"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -10589,7 +10944,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 140.97 160.02 90)
+		(at 137.16 160.02 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10600,7 +10955,7 @@
 		(fields_autoplaced yes)
 		(uuid "943bbb1c-d657-40b4-8b7a-b49b476e43f9")
 		(property "Reference" "#PWR01"
-			(at 147.32 160.02 0)
+			(at 143.51 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10611,7 +10966,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 146.05 160.02 0)
+			(at 142.24 160.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10621,7 +10976,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 140.97 160.02 0)
+			(at 137.16 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10632,7 +10987,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 140.97 160.02 0)
+			(at 137.16 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10643,7 +10998,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 140.97 160.02 0)
+			(at 137.16 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11331,6 +11686,85 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 101.6 34.29 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "adf514c6-ce16-4154-8f98-9095a65d7501")
+		(property "Reference" "#FLG03"
+			(at 99.695 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 97.79 34.2899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 101.6 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fe76198d-2c7b-4815-bd94-a176dde510e3")
+		)
+		(instances
+			(project "PCB_SALUS_v2"
+				(path "/73bd63ea-8f0f-4b31-8d24-3cde4b540ad9/195b6a32-4ce2-4ad3-b1b2-c1501c147c70"
+					(reference "#FLG03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 201.93 44.45 90)
 		(unit 1)
@@ -11561,6 +11995,84 @@
 			(project "PCB_SALUS_v2"
 				(path "/73bd63ea-8f0f-4b31-8d24-3cde4b540ad9/195b6a32-4ce2-4ad3-b1b2-c1501c147c70"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 234.95 154.94 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc407afd-37f2-4cc2-85a6-cfa63f618255")
+		(property "Reference" "#FLG05"
+			(at 234.95 156.845 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 234.95 160.0777 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 234.95 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 234.95 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 234.95 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "737b6441-59ee-410e-be4f-5f4a2b980a0e")
+		)
+		(instances
+			(project "PCB_SALUS_v2"
+				(path "/73bd63ea-8f0f-4b31-8d24-3cde4b540ad9/195b6a32-4ce2-4ad3-b1b2-c1501c147c70"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
@@ -12300,41 +12812,41 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Jack-DC")
-		(at 173.99 93.98 180)
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 171.45 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
-		(on_board no)
+		(in_bom yes)
+		(on_board yes)
 		(in_pos_files yes)
-		(dnp yes)
+		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "cc9952e2-bf00-4236-8a87-0f8f1b0a3011")
+		(uuid "cd3c037d-dbfc-4e74-902f-91d9ca9612dd")
 		(property "Reference" "J5"
-			(at 180.34 92.7099 0)
+			(at 173.99 91.4399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Value" "Jack-DC"
-			(at 180.34 95.2499 0)
+		(property "Value" "Conn_01x02"
+			(at 173.99 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 172.72 92.964 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 171.45 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12345,7 +12857,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 172.72 92.964 0)
+			(at 171.45 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12355,19 +12867,8 @@
 				)
 			)
 		)
-		(property "Description" "DC Barrel Jack"
-			(at 173.99 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "BOM Comments" "NO MONTAR. Entrada de alimentacion pendiente; sin huella ni LCSC PN por decision de diseno."
-			(at 0 0 0)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 171.45 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12378,10 +12879,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "d10af75a-30ab-4d29-9868-79e574f756d3")
+			(uuid "7d3490b3-ad30-4cf0-b88c-edb65c9a5b7f")
 		)
 		(pin "2"
-			(uuid "080332c5-31aa-4ef0-a3fa-b5f7d5d18202")
+			(uuid "68a0cab7-b22e-42ae-9537-7a9cc1136873")
 		)
 		(instances
 			(project "PCB_SALUS_v2"
@@ -13847,7 +14348,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x03"
+		(property "Value" "Header_THT_1x03_P2.54mm"
 			(at 220.98 93.9799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13858,7 +14359,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_S3B-XH-SM4-TB_1x03-1MP_P2.50mm_Horizontal"
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
 			(at 218.44 92.71 0)
 			(hide yes)
 			(show_name no)
@@ -13891,7 +14392,7 @@
 				)
 			)
 		)
-		(property "LCSC PN" "C5306495"
+		(property "LCSC PN" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13902,7 +14403,7 @@
 				)
 			)
 		)
-		(property "BOM Comments" "Conector SMD de 3 pines; requiere housing XHP-3 y terminales SXH-001T-P0.6."
+		(property "BOM Comments" "Montaje manual: header THT vertical 1x03, paso 2.54 mm. Excluir de BOM y CPL de ensamblaje JLCPCB."
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13913,7 +14414,7 @@
 				)
 			)
 		)
-		(property "Manufacturer" "JST"
+		(property "Manufacturer" "Compra manual"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13924,7 +14425,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "S3B-XH-SM4-TB(LF)(SN)"
+		(property "Manufacturer Part" "Header generico THT 1x03, P2.54 mm, vertical"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13935,7 +14436,7 @@
 				)
 			)
 		)
-		(property "MPN" "S3B-XH-SM4-TB(LF)(SN)"
+		(property "MPN" "Header generico THT 1x03 P2.54 mm"
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)
@@ -13966,7 +14467,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 166.37 91.44 90)
+		(at 163.83 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13977,7 +14478,7 @@
 		(fields_autoplaced yes)
 		(uuid "f7abf90a-9e1c-4298-8af3-f7ae421b130b")
 		(property "Reference" "#PWR037"
-			(at 170.18 91.44 0)
+			(at 163.83 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13988,7 +14489,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 165.1 88.9 90)
+			(at 163.83 86.36 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13998,7 +14499,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 166.37 91.44 0)
+			(at 163.83 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14009,7 +14510,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 166.37 91.44 0)
+			(at 163.83 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14020,7 +14521,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 166.37 91.44 0)
+			(at 163.83 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

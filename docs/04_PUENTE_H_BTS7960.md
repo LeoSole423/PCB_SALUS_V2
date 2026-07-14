@@ -88,14 +88,14 @@ sensor de corriente de precision ni una proteccion primaria de sobrecorriente.
 
 ## Estado de revision
 
-- `J6` no tiene huella, MPN ni conector complementario seleccionados: pendiente
-  antes de actualizar la PCB desde el esquematico.
+- `J6` usa `PinHeader_2x04_P2.54mm_Vertical`. Es un header THT vertical de
+  montaje manual: JLCPCB debe fabricar los agujeros y pads, pero no montarlo.
+  Debe excluirse de la BOM y CPL de ensamblaje JLCPCB.
 - Los pines 3 y 4 quedaron como redes sin etiqueta. Si no se usaran ahora,
   colocar marcadores `No connect`; si se reservaran, etiquetarlos como
   `HBRIDGE_R_IS` y `HBRIDGE_L_IS`.
-- El ERC no introdujo un error especifico de J6, pero el analizador detecta un
-  unico GND para seis senales. Es aceptable para un cable corto interno; para
-  un cable largo, usar pares con retorno de GND adicional o un cable apantallado.
+- La relacion completa con la ESP32 y el resto de los conectores esta en el
+  [mapa de submodulos y pinout](05_MAPA_DE_SUBMODULOS_Y_PINOUT.md).
 
 ## Fuente tecnica
 
